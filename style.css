@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#005aa7,#fffde4);
+    font-family: sans-serif;
+    color: rgb(71, 69, 66);
+}
+
+.location{
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: load-location 300ms ease-in;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
+}
+
+.degree-section{
+    display: flex;
+    align-items: center;
+    animation: load-location 300ms ease-in;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 400ms;
+    
+}
+.group{
+    animation: load-location 300ms ease-in;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 600ms;
+}
+
+.degree-section span{
+    margin: 10px;
+    font-size: 1.5rem;
+}
+.degree-section h2{
+    font-size: 6rem;
+}
+
+.feels-section, .humidity-section{
+    padding-top: 1rem;
+    display: flex;
+    animation: load-location 300ms ease-in;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 600ms;
+}
+.feels-f{
+    padding-left: 3px;
+    font-size: 10px;
+}
+
+.feels-section h3, .humidity-section h3{
+    padding-right: 1rem;
+}
+
+.humidity{
+    display: flex;
+    flex-direction: row;
+}
+.message-sum{
+   text-align: left;
+   
+}
+
+.location{
+    font-size: 1.5rem;
+}
+.location i{
+    font-size: 3rem;
+    margin-inline-start: 1rem;
+}
+
+@keyframes load-location {
+
+    0%{
+        opacity: 0;
+    }
+   
+    
+    100%{
+        opacity: 1;
+    }
+}
+
